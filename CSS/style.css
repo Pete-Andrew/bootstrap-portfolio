@@ -1,3 +1,13 @@
+
+body {
+    /* background-image: url(../images/peter-andrew-sunken-king-ps-edit-2.jpg);
+    background-size: cover; */
+    background-color: rgb(110, 171, 196);
+    /* background-image: url(../images/grunge.jpg);
+    background-size: contain;
+     */
+}
+
 .navbar {
     position: fixed;
     width: 100%;
@@ -79,8 +89,10 @@ h5 {
 .container-fluid {
     display: flex;  /*setting a display is required to justify the content (?) */
     justify-content: center;
+    
     /* background-color: aquamarine; */
     text-align: justify; 
+    
 }
 
 .col-sm-12 {
@@ -91,18 +103,29 @@ h5 {
 .card {
     border: 10px rgb(46, 145, 175) solid;
     outline: 10px rgb(154, 243, 239) solid;
+    height: 100%;
 }
 
 .cardContainer {   
     padding-left: 40px;
     padding-right: 40px;
     padding-top: 40px;
-        
+    
+}
+
+.card-text {
+    /* display: flex; */
+    /* height: 300px; */
+    
+    /* margin-bottom: -100px; */
 }
 
 .btn-primary {
     display: flex;
     justify-content: center;
+    margin-top: 20px;
+    
+    /* how to set buttons a consistent and relative distance from the bottom of the card container?? */
     /* border: 10px rgb(105, 185, 223) solid; */
 }
 
@@ -142,24 +165,31 @@ h5 {
 .Skills {
     display: flex;
     flex-direction:column;
-    background-color: cadetblue;
+    background-color: rgb(255, 255, 255);
     width: 100%;
     height: 100%;
     text-align: center;
     margin-top: 70px;
     padding: 50px;
+    border-top: 10px rgb(46, 145, 175) solid;
+    border-bottom: 10px rgb(46, 145, 175) solid;
+    outline: 10px rgb(154, 243, 239) solid;
 }
 
 .About-me {
-    background-color: aquamarine;
+    background-color: rgb(255, 255, 255);
     margin-top: 50px; 
     margin-bottom: 50px;
     padding: 50px;
- 
+    border-top: 10px rgb(46, 145, 175) solid;
+    border-bottom: 10px rgb(46, 145, 175) solid;
+    outline: 10px rgb(154, 243, 239) solid;
 }
 
 .About-me h1 {
-    text-align: center;
+    text-align: center;   
+    margin-left: auto;  
+    margin-right: auto;
 }
 
 .About-me p {
@@ -178,28 +208,43 @@ h5 {
 }
 
 .Contact-me {
-    background-color: aquamarine;
+    background-color: rgb(255, 255, 255);
     margin-top: 50px; 
     padding: 50px;
-   
+    border-top: 10px rgb(46, 145, 175) solid;
+    border-bottom: 10px rgb(46, 145, 175) solid;
+    outline: 10px rgb(154, 243, 239) solid;
+    
 }
 
 .Contact-me h1 {
-    text-align: center;
+    display: flex;
+    justify-content: center;    
 }
 
-.Contact-me p {
+.Contact-me a{
+    display: flex;
     text-align: center;
+    justify-content: center;
+    /* margin-left and margin right auto together centralise the anchor tags below */
+    margin-left: auto;  
+    margin-right: auto;
+    width: 250px;
+    align-items: center;
+    
 }
 
 .footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: aqua;
+    background-color: rgb(254, 255, 255);
     width: 100%;
     height: 200px;
     margin-top: 50px;
+    border-top: 10px rgb(46, 145, 175) solid;
+    
+    outline: 10px rgb(154, 243, 239) solid;
     
     /* background-image: url(../images/peter-andrew-desert-render-final-edit-1.jpg);
     background-position: bottom; */
@@ -235,3 +280,4 @@ Notes:
 How to set it so that a link sends you to a point on a page but offset?
 How to get the burger menu to work when the page size is reduced? 
 How to set up a notes section? 
+how to set buttons a consistent and relative distance from the bottom of the card container??
