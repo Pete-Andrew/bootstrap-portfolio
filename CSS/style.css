@@ -37,6 +37,7 @@ a:hover {
     background-size: cover;
     background-position: center;
     margin-top: 90px;
+    text-align: justify; 
 }
 
 .container h1 {
@@ -79,6 +80,7 @@ h5 {
     display: flex;  /*setting a display is required to justify the content (?) */
     justify-content: center;
     /* background-color: aquamarine; */
+    text-align: justify; 
 }
 
 .col-sm-12 {
@@ -151,6 +153,9 @@ h5 {
 .About-me {
     background-color: aquamarine;
     margin-top: 50px; 
+    margin-bottom: 50px;
+    padding: 50px;
+ 
 }
 
 .About-me h1 {
@@ -158,7 +163,14 @@ h5 {
 }
 
 .About-me p {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    text-align: justify; 
+    margin-left: 5%;
+    margin-right: 5%;
+    
+    /* text-align: center; */
+    
 }
 
 .About-me li { 
@@ -168,6 +180,8 @@ h5 {
 .Contact-me {
     background-color: aquamarine;
     margin-top: 50px; 
+    padding: 50px;
+   
 }
 
 .Contact-me h1 {
@@ -215,3 +229,9 @@ h5 {
     margin-top: 20px;
     
 }
+
+
+Notes: 
+How to set it so that a link sends you to a point on a page but offset?
+How to get the burger menu to work when the page size is reduced? 
+How to set up a notes section? 
